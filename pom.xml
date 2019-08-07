@@ -117,6 +117,14 @@
 
         </plugins>
 
+        <extensions>
+             <extension>
+                <groupId>com.github.platform-team</groupId>
+                <artifactId>aws-maven</artifactId>
+                <version>6.0.0</version>
+            </extension>
+        </extensions>
+
     </build>
 
     <profiles>
@@ -318,17 +326,13 @@
     </developers>
 
     <distributionManagement>
-        <repository>
-            <id>sonatype-nexus-staging</id>
-            <name>Sonatype staging repository</name>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
-
         <snapshotRepository>
-            <id>sonatype-nexus-snapshots</id>
-            <name>Sonatype snapshot repository</name>
-            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+            <id>softwaresecured-maven-snapshot</id>
+            <url>s3://softwaresecured-maven/snapshot</url>
         </snapshotRepository>
+        <repository>
+            <id>softwaresecured-maven-release</id>
+            <url>s3://softwaresecured-maven/release</url>
+        </repository>
     </distributionManagement>
-
 </project>
