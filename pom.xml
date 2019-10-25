@@ -327,12 +327,12 @@
 
     <distributionManagement>
         <snapshotRepository>
-            <id>softwaresecured-maven-snapshot</id>
-            <url>s3://softwaresecured-maven/snapshot</url>
+            <id>reshiftsecurity-maven-snapshot</id>
+            <url>s3://reshiftsecurity-maven/snapshot</url>
         </snapshotRepository>
         <repository>
-            <id>softwaresecured-maven-release</id>
-            <url>s3://softwaresecured-maven/release</url>
+            <id>reshiftsecurity-maven-release</id>
+            <url>s3://reshiftsecurity-maven/release</url>
         </repository>
     </distributionManagement>
 </project>
